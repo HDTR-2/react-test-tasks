@@ -1,10 +1,10 @@
 import './App.scss';
-import {Profile} from "./Profile/Profile";
+import {Todo} from "./Todo/Todo";
 
 function App() {
     return (
         <div className="App">
-            <Profile/>
+            <Todo/>
         </div>
     );
 }
