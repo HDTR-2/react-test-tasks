@@ -1,0 +1,110 @@
+.profile {
+  font-family: "Calibri", serif;
+  font-size: 20px;
+  color: rgba(22, 22, 22, 0.8);
+  height: 100vh;
+
+
+  &__container {
+
+    padding: 25px0 25px;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to top, #9ba6af 0%, #b5cbda 100%);
+
+  }
+
+  &__header {
+    padding: 50px;
+    gap: 10px;
+  }
+
+
+  &__image {
+    width: 300px;
+    height: 300px;
+    box-shadow: 11px 24px 33px 11px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+
+  }
+
+  &__name {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 18px 0;
+  }
+
+  &__info {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    a {
+      color: rgba(22, 22, 22, 0.8);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__biography {
+    font-size: 28px;
+    margin: 25px;
+  }
+}
+
+@media (max-width: 769px) {
+  .profile {
+    &__container {
+      text-align: center;
+      flex-direction: column;
+      padding-bottom: 50px;
+    }
+
+    &__header {
+      padding-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .profile {
+
+    &__header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__image {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      border-radius: 100%;
+    }
+
+    &__info {
+      font-size: 22px;
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+    }
+
+    &__name {
+      font-size: 30px;
+    }
+
+    &__biography {
+      font-size: 22px;
+      margin: 25px;
+    }
+
+  }
+}
