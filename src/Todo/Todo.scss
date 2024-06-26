@@ -1,0 +1,103 @@
+.Todo {
+  padding-top: 50px;
+  text-align: center;
+
+
+  &__container {
+    height: 100vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 25px;
+    padding: 20px;
+    color: #161616CC;
+    background-image: linear-gradient(to top, #9ba6af 0%, #b5cbda 100%);
+
+  }
+
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    width: 100%;
+    height: 44px;
+    margin-right: 10px;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+
+    &:focus {
+      border: 2px solid #007BFF;
+    }
+  }
+
+  .button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #fff;
+      border: 2px solid #007BFF;
+      color: #007BFF;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__item {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+
+
+    &-checkbox {
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+      z-index: 5;
+      cursor: pointer;
+    }
+
+    &-button {
+      background-color: #dc3545;
+      color: white;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #fff;
+        border: 2px solid #dc3545;
+        color: #dc3545;
+      }
+    }
+  }
+}
+
