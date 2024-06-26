@@ -1,17 +1,14 @@
 .profile {
-  font-family: "Calibri", serif;
   font-size: 20px;
-  color: #161616CC;
-  height: 100vh;
 
 
   &__container {
-
-    padding: 25px0 25px;
+    padding: 25px 25px;
     max-width: 1920px;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    color: #161616CC;
     background-image: linear-gradient(to top, #9ba6af 0%, #b5cbda 100%);
 
   }

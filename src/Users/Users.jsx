@@ -31,11 +31,13 @@ export const Users = () => {
     };
     return (
         <div className="Users">
-            {selectedUser ? (
-                <UsersDetails user={selectedUser} onBackClick={handleBackClick}/>
-            ) : (
-                <UserList users={users} onUserClick={handleUserClick}/>
-            )}
+            <div className="Users__container">
+                {selectedUser ? (
+                    <UsersDetails user={selectedUser} onBackClick={handleBackClick}/>
+                ) : (
+                    <UserList users={users} onUserClick={handleUserClick}/>
+                )}
+            </div>
         </div>
     );
 };

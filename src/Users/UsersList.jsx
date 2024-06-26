@@ -3,7 +3,7 @@ import React from 'react';
 export const UserList = ({users, onUserClick}) => {
     return (
         <div className="Users__list">
-            <h1>Список пользователей</h1>
+            <h2>Список пользователей</h2>
             <ul>
                 {users.map(user => (
                     <li key={user.id} onClick={() => onUserClick(user.id)}>

@@ -47,12 +47,14 @@ export const Todo = () => {
 
     return (
         <div className="Todo">
-            <h1>Список Задач</h1>
-            <TodoInput addTodo={addTodo}/>
-            <TodoList
-                todos={todos}
-                toggleComplete={toggleComplete}
-                removeTodo={removeTodo}/>
+            <div className="Todo__container">
+                <h2>Список Задач</h2>
+                <TodoInput addTodo={addTodo}/>
+                <TodoList
+                    todos={todos}
+                    toggleComplete={toggleComplete}
+                    removeTodo={removeTodo}/>
+            </div>
         </div>
     );
 };
